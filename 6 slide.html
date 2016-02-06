@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#slideup").click(function(){
+               $(".para").slideUp(); 
+            });
+            
+            $("#slidedown").click(function(){
+                $(".para").slideDown();
+            });
+            
+            $("#toggleslide").click(function(){
+               $(".para").slideToggle(); 
+            });
+        });
+    </script>
+</head>
+<body>
+     <a id="slideup" href="#">click here to slideup</a><br><br>
+      <a id="slidedown" href="#">click here to slide down</a><br><br>
+       <a id="toggleslide" href="#">click here to toggle</a><br><br>
+   <p class="para">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vel ex accusamus nam. Quis voluptatum cumque quo, sunt ducimus quidem magni unde omnis facilis aliquid neque tenetur possimus ratione necessitatibus?</p>
+       <p class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sit enim cum, qui alias, magnam quis hic impedit totam praesentium assumenda deserunt error beatae est nam obcaecati quasi iste rerum! </p>
+       <p class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aut architecto natus veniam, excepturi, praesentium assumenda consequuntur vero ipsam numquam vitae. Sapiente repellat quae mollitia, id quisquam debitis aut commodi! </p>
+</body>
+</html>

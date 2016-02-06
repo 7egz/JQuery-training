@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#append").click(function(){
+              $("p:first").append(" hello");   
+            });
+         //  $("#prepend").click(function(){
+           //   $("p:first").prepend("hello again ") 
+           //});
+           // $("#prepend").click(function(){
+             //  $("p:contains(mahmoud)").prepend("thanks ") 
+            //});
+            $("#append").click(function(){
+               $("<p>hello</p>").insertAfter("p:first") 
+            });
+            $("#prepend").click(function(){
+               $("<p>hello</p>").insertBefore("p:last") 
+            });
+        });
+    </script>
+</head>
+<body>
+   <a href="#" id="append">appending</a>
+   <a href="#" id="prepend">prepend</a>
+    <div id="box">
+        <p>this is the 1</p>
+        <p>this is the mahmoud 2</p>
+        <p>this is the 3</p>
+        <p>this is the 4</p>
+        <p>this is the 5</p>
+        
+        
+        
+    </div>
+</body>
+</html>

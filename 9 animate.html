@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            
+            $("#grow").click(function(){
+                $("#box").animate({width:"500px" ,height:"400px"}, 4000)
+            });
+            
+            
+        $("#move").click(function(){
+            
+           $("#box").animate({marginLeft:"100px"}, 1000) 
+            
+        });
+            
+            $("#increasesize").click(function(){
+               $("#box").animate({fontSize:"30px"}, 1000) 
+            });
+            $("#domanythings").click(function(){
+               $("#box").animate({width:"500px", fontSize:"30px", marginLeft:"200px"}, 1000) 
+            });
+        });
+        
+    </script>
+    
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: #cecece;
+            position: absolute;
+            margin-top: 10%;
+        }
+        
+        #box p {
+            text-transform: uppercase;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+   <a href="#" id="grow">grow</a>
+   <a href="#" id="move">move</a>
+   <a href="#" id="increasesize">increase size</a>
+   <a href="#" id="domanythings">do many things</a>
+
+    <div id="box">
+        <p>hello student</p>
+    </div>
+</body>
+</html>

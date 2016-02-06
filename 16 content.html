@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+         //$("#create").click(function(){
+         //  $("p:first").html("<p>replace this text by this</p>")  
+        //}); 
+           // alert($("#container").html());
+            
+            //$("#creat_text").click(function(){
+               
+              //  $("#container p:last").text("hello world")
+            //});
+            
+            
+            $("#create_variable").click(function(){
+            var newText = $('#container p:first');
+            $("#container p:last").text(newText );
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#" id="create">create</a>
+    <a href="#" id="creat_text">create text</a>
+    <a href="#" id="create_variable">create variable</a>
+    <div id="container">
+        <p> 1- Lorem mahmoud ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quasi, eveniet. Eveniet perferendis in laborum obcaecati voluptatum, qui maiores cumque laboriosam delectus nisi! Quo officia doloribus ipsa ullam, aspernatur tempora. </p>
+        <p> 2- Lorem alaa  ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quasi, eveniet. Eveniet perferendis in laborum obcaecati voluptatum, qui maiores cumque laboriosam delectus nisi! Quo officia doloribus ipsa ullam, aspernatur tempora. </p>
+        <p> 3-Lorem mooga ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quasi, eveniet. Eveniet perferendis in laborum obcaecati voluptatum, qui maiores cumque laboriosam delectus nisi! Quo officia doloribus ipsa ullam, aspernatur tempora. </p>
+   
+        
+    </div>
+</body>
+</html>
